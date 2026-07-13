@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-mobile-small: 375px;
+  --breakpoint-mobile: 480px;
+  --breakpoint-mobile-landscape: 640px;
+  --breakpoint-tablet-portrait: 768px;
+  --breakpoint-tablet-landscape: 1024px;
+  --breakpoint-laptop: 1280px;
+}
+
+@theme {
+  --color-primary: #041525;
+  --color-secondary: #c77f3e;
+  --color-accent: #412000;
+}
+
+@font-face {
+  font-family: "YekanBakh-Light";
+  src: url("../public/fonts/iranyekanweblightfanum.woff") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "YekanBakh-SemiBold";
+  src: url("../public/fonts/YekanBakhFaNum-SemiBold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "YekanBakh-Bold";
+  src: url("../public/fonts/YekanBakhFaNum-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "YekanBakh-ExtraBold";
+  src: url("../public/fonts/YekanBakhFaNum-ExtraBold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    font-family: "YekanBakh-SemiBold", sans-serif;
+  }
+}
