@@ -1,6 +1,6 @@
 import AboutMe from "./components/AboutMe/AboutMe";
 import HeroSection from "./components/HeroSection";
-import TechnicalFocus from "./components/TechnicalFocus";
+import TechnicalFocus from "./components/TechnicalFocus/TechnicalFocus";
 
 function Home() {
   return (
