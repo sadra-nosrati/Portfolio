@@ -53,3 +53,20 @@
     font-family: "YekanBakh-SemiBold", sans-serif;
   }
 }
+
+@keyframes timelineShow {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-timeline {
+  animation: timelineShow 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
