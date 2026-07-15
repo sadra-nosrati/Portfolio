@@ -21,7 +21,7 @@ function Header() {
                 src="./Images/Desktop-Logo.webp"
                 alt="لوگوی سایت"
                 draggable="false"
-                className="w-70 transition-all duration-500 group-hover:brightness-110"
+                className="w-50 transition-all duration-500 group-hover:brightness-110 tablet-portrait:w-60"
               />
             </a>
           </div>

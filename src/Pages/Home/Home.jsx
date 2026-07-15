@@ -5,7 +5,7 @@ import TechnicalFocus from "./components/TechnicalFocus/TechnicalFocus";
 
 function Home() {
   return (
-    <main className="h-1000">
+    <main className="h-1200">
       <HeroSection />
 
       <AboutMe />
