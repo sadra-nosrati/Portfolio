@@ -7,14 +7,14 @@ function AboutMe() {
     <section
       id="about"
       aria-labelledby="about-title"
-      className="flex items-center mx-auto max-w-7xl mt-40 gap-10"
+      className="mx-auto mt-24 flex max-w-7xl flex-col items-center gap-5 px-5 mobile:px-6 tablet-portrait:mt-28 tablet-portrait:px-8 tablet-landscape:mt-36 tablet-landscape:flex-row tablet-landscape:items-center tablet-landscape:gap-9 laptop:mt-40 laptop:gap-15"
     >
       <AboutImage />
 
-      <div>
+      <div className="w-full text-center tablet-landscape:text-right">
         <h2
           id="about-title"
-          className="inline-block text-lg text-secondary bg-secondary/10 px-4 py-1 rounded-sm transition-all duration-300 hover:bg-secondary/20 hover:px-5"
+          className="inline-block rounded-md bg-secondary/10 px-4 py-1 text-base text-secondary transition-all duration-300 hover:bg-secondary/20 hover:px-6 mobile:text-lg"
         >
           درباره من
         </h2>
