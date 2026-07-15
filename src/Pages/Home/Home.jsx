@@ -7,7 +7,7 @@ function Home() {
     <main className="h-1000">
       <HeroSection />
 
-      <AboutMe />
+      {/* <AboutMe /> */}
 
       <TechnicalFocus />
     </main>
