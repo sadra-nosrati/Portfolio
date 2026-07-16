@@ -3,10 +3,19 @@ import { notify } from "../../utils/Toast";
 
 function Footer() {
   const copyLink = async () => {
-    try {
-      const url = window.location.origin + window.location.pathname;
+    const url = window.location.origin + window.location.pathname;
 
-      await navigator.clipboard.writeText(url);
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(url);
+      } else {
+        const input = document.createElement("input");
+        input.value = url;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        document.body.removeChild(input);
+      }
 
       notify.success("لینک صفحه کپی شد");
     } catch (error) {
