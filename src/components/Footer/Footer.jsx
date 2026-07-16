@@ -9,7 +9,8 @@ function Footer() {
       await navigator.clipboard.writeText(url);
 
       notify.success("لینک صفحه کپی شد");
-    } catch {
+    } catch (error) {
+      console.error(error);
       notify.error("امکان کپی لینک وجود ندارد");
     }
   };
