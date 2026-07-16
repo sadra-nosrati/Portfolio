@@ -1,52 +1,62 @@
 import { HiOutlineEnvelope, HiOutlineHome } from "react-icons/hi2";
 import { LuFileText, LuFolderOpen, LuWrench } from "react-icons/lu";
 
-const MobileSideBarActionStyle =
-  "group flex items-center gap-3 rounded-xl px-4 py-3 text-slate-700 transition-all duration-200 active:scale-[.96]";
+const items = [
+  {
+    href: "/",
+    label: "صفحه اصلی",
+    icon: HiOutlineHome,
+  },
+  {
+    href: "#skills",
+    label: "تخصص ها",
+    icon: LuWrench,
+  },
+  {
+    href: "#projects",
+    label: "پروژه ها",
+    icon: LuFolderOpen,
+  },
+  {
+    href: "#blog",
+    label: "بلاگ",
+    icon: LuFileText,
+  },
+  {
+    href: "#contact",
+    label: "ارتباط",
+    icon: HiOutlineEnvelope,
+  },
+];
 
-const MobileSideBarActiveStyle = "bg-[#041525] text-white";
+const baseStyle =
+  "flex items-center gap-3 rounded-xl px-4 py-3 transition-all duration-200";
 
-function MobileSideBarNavBar() {
+function MobileSideBarNavBar({ activeItem, setActiveItem, setIsOpen }) {
+  const handleClick = (href) => {
+    setActiveItem(href);
+    setIsOpen(false);
+  };
+
   return (
-    <nav aria-label="منوی اصلی" className="flex-1 mt-4">
-      <ul className="px-2">
-        <li>
-          <a
-            href="/"
-            className={`${MobileSideBarActionStyle} ${MobileSideBarActiveStyle}`}
-          >
-            <HiOutlineHome className="text-2xl text-white" />
-            <span>صفحه اصلی</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#skills" className={MobileSideBarActionStyle}>
-            <LuWrench className="text-2xl transition-colors duration-200 group-active:text-white" />
-            <span className="group-active:text-white">تخصص ها</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#projects" className={MobileSideBarActionStyle}>
-            <LuFolderOpen className="text-2xl transition-colors duration-200 group-active:text-white" />
-            <span className="group-active:text-white">پروژه ها</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#blog" className={MobileSideBarActionStyle}>
-            <LuFileText className="text-2xl transition-colors duration-200 group-active:text-white" />
-            <span className="group-active:text-white">بلاگ</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#contact" className={MobileSideBarActionStyle}>
-            <HiOutlineEnvelope className="text-2xl transition-colors duration-200 group-active:text-white" />
-            <span className="group-active:text-white">ارتباط</span>
-          </a>
-        </li>
+    <nav className="mt-4 flex-1">
+      <ul className="space-y-2 px-2">
+        {items.map(({ href, label, icon: Icon }) => (
+          <li key={href}>
+            <a
+              href={href}
+              onClick={() => handleClick(href)}
+              className={`${baseStyle} ${
+                activeItem === href
+                  ? "bg-primary text-white"
+                  : "text-slate-700 hover:bg-slate-100"
+              }`}
+            >
+              <Icon className="text-2xl" />
+              <span>{label}</span>
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );

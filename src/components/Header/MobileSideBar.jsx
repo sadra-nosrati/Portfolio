@@ -1,7 +1,10 @@
+import { useState } from "react";
 import MobileSideBarHeader from "./MobileSideBarHeader";
 import MobileSideBarNavBar from "./MobileSideBarNavBar";
 
 function MobileSideBar({ isOpen, setIsOpen }) {
+  const [activeItem, setActiveItem] = useState("/");
+
   return (
     <>
       <div
@@ -19,7 +22,12 @@ function MobileSideBar({ isOpen, setIsOpen }) {
         }`}
       >
         <MobileSideBarHeader setIsOpen={setIsOpen} />
-        <MobileSideBarNavBar />
+
+        <MobileSideBarNavBar
+          activeItem={activeItem}
+          setActiveItem={setActiveItem}
+          setIsOpen={setIsOpen}
+        />
       </aside>
     </>
   );
