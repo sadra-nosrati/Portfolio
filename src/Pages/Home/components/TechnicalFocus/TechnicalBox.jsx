@@ -9,7 +9,7 @@ const TechnicalBoxDesc = "text-sm leading-7 text-slate-300";
 
 function TechnicalBox() {
   return (
-    <div className="grid grid-cols-1 mobile-landscape:grid-cols-2 laptop:grid-cols-4 gap-5 laptop:gap-6 mt-16 tablet-portrait:mt-24 max-w-7xl px-5">
+    <div className="grid grid-cols-1 mobile-landscape:grid-cols-2 laptop:grid-cols-4 gap-5 laptop:gap-6 mt-16 tablet-portrait:mt-24 max-w-7xl">
       <article className={TechnicalBoxStyle}>
         <FaRecycle className={TechnicalBoxIconStyle} />
 

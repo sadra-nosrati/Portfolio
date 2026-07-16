@@ -19,13 +19,11 @@ function TimelineBoxs() {
               } pr-14`}
             >
               <div className="rounded-3xl bg-white p-7 shadow-[0_2px_12px_rgba(4,21,37,.05)] transition-shadow duration-300 hover:shadow-[0_10px_25px_rgba(4,21,37,.08)]">
-                <h3 className="text-xl font-bold text-primary">
+                <h3 className="tablet-landscape:text-xl font-bold text-primary">
                   {project.title}
                 </h3>
 
-                <p className="mt-2 text-secondary font-medium">
-                  {project.company}
-                </p>
+                <p className="mt-2 text-secondary">{project.company}</p>
 
                 <div className="mt-2 flex gap-2 text-sm text-slate-500">
                   <span>{project.location}</span>
@@ -37,7 +35,7 @@ function TimelineBoxs() {
                   {project.items.map((item, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-3 text-slate-700 leading-8"
+                      className="flex items-start gap-3 text-sm text-slate-700 leading-8"
                     >
                       <span className="mt-3 h-2 w-2 rounded-full bg-secondary shrink-0"></span>
 

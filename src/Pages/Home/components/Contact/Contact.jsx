@@ -5,9 +5,9 @@ function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-title"
-      className="mx-auto py-15 max-w-7xl px-4 mobile:px-6 tablet-landscape:px-8"
+      className="mx-auto py-15 max-w-270 px-4"
     >
-      <div className="overflow-hidden rounded-4xl bg-primary px-6 py-14 shadow-[0_20px_60px_rgba(4,21,37,.12)] mobile:px-8 tablet-portrait:px-12 tablet-portrait:py-16 tablet-landscape:px-16">
+      <div className="overflow-hidden rounded-4xl bg-primary px-6 py-14 shadow-[0_20px_60px_rgba(4,21,37,.12)] tablet-landscape: mobile:px-8 tablet-portrait:px-12 tablet-portrait:py-16 tablet-landscape:px-16">
         <ContactHeader />
 
         <address className="mt-12 not-italic">

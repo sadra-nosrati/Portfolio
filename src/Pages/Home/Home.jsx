@@ -1,7 +1,7 @@
 import AboutMe from "./components/AboutMe/AboutMe";
 import Contact from "./components/Contact/Contact";
-import Patents from "./components/FeaturedProjects/Patents";
 import HeroSection from "./components/HeroSection";
+import Patents from "./components/Patents/Patents";
 import ProjectTimeline from "./components/ProjectTimeline/ProjectTimeline";
 import TechnicalFocus from "./components/TechnicalFocus/TechnicalFocus";
 

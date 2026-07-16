@@ -5,7 +5,7 @@ function TechnicalFocus() {
     <section
       id="skills"
       aria-labelledby="technical-focus-title"
-      className="bg-navy-soft mt-32 mobile-landscape:mt-40 flex flex-col items-center justify-center py-20 tablet-portrait:py-32 laptop:py-40"
+      className="bg-navy-soft px-4 flex flex-col items-center justify-center py-20 tablet-portrait:py-32 laptop:py-40"
     >
       <h2
         id="technical-focus-title"

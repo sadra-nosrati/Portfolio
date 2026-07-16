@@ -11,8 +11,8 @@ function Footer() {
   };
 
   return (
-    <footer className="border-t border-slate-200 bg-white">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-4 py-8 mobile:px-6 tablet-landscape:flex-row tablet-landscape:px-8">
+    <footer className="border-t border-slate-200 bg-white px-4">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 py-8 tablet-landscape:flex-row">
         <p className="text-center text-sm leading-7 text-slate-500 tablet-landscape:text-right">
           © {new Date().getFullYear()} تمامی حقوق محفوظ است. طراحی و توسعه توسط{" "}
           <a

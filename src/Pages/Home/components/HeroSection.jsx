@@ -1,10 +1,8 @@
-import React from "react";
-
 function HeroSection() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="relative flex min-h-140 items-center overflow-hidden mobile-small:min-h-150 mobile:min-h-160 mobile-landscape:min-h-162.5 tablet-portrait:min-h-170 tablet-landscape:min-h-175 laptop:min-h-180"
+      className="relative flex min-h-140 px-4 items-center mobile-small:min-h-150 mobile:min-h-160 mobile-landscape:min-h-162.5 tablet-portrait:min-h-170 tablet-landscape:min-h-175 laptop:min-h-180"
     >
       <img
         src="/Images/Main-Image-1.png"

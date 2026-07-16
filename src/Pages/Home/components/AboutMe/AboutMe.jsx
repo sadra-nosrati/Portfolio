@@ -7,7 +7,7 @@ function AboutMe() {
     <section
       id="about"
       aria-labelledby="about-title"
-      className="mx-auto mt-24 flex max-w-7xl flex-col items-center gap-5 px-5 mobile:px-6 tablet-portrait:mt-28 tablet-portrait:px-8 tablet-landscape:mt-36 tablet-landscape:flex-row tablet-landscape:items-center tablet-landscape:gap-9 laptop:mt-40 laptop:gap-15"
+      className="mx-auto px-4 py-10 flex max-w-7xl flex-col items-center gap-5 tablet-portrait:py-14 tablet-landscape:py-20 tablet-landscape:flex-row tablet-landscape:items-center tablet-landscape:gap-9 laptop:py-25 laptop:gap-15"
     >
       <AboutImage />
 
