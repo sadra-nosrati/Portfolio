@@ -45,10 +45,10 @@ function HeroSection() {
             </a>
 
             <a
-              href="/catalog.pdf"
+              href="/Resume.pdf"
               className="rounded-xl border border-white/30 px-7 py-3 text-center text-sm text-white transition hover:border-secondary hover:text-secondary mobile:px-8"
             >
-              دریافت کاتالوگ فنی
+              دانلود رزومه (PDF)
             </a>
           </div>
         </div>

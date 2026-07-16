@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "طراحی و ساخت سیستم رباتیک جمع‌آوری شمش سرب",
-    company: "کارفرما: صبا باتری",
+    company: "صبا باتری",
     location: "تهران",
     date: "۱۴۰۰",
     items: [
@@ -26,7 +26,7 @@ const projects = [
 
   {
     title: "مدیر مهندسی ساخت",
-    company: "صبا باتری تهران",
+    company: "صبا باتری",
     location: "تهران",
     date: "۱۳۹۵",
     items: [
