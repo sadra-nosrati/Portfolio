@@ -64,3 +64,30 @@
   background: #dc2626 !important;
   background-image: none !important;
 }
+
+@keyframes loader-bar {
+  0% {
+    transform: translateX(-140%);
+  }
+
+  100% {
+    transform: translateX(420%);
+  }
+}
+
+.loader-fill {
+  animation: gearFill 1.8s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+@keyframes gearFill {
+  0% {
+    transform: scaleY(0);
+    fill: #c77f3e;
+  }
+
+  100% {
+    transform: scaleY(1);
+    fill: #c77f3e;
+  }
+}
