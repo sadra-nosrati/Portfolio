@@ -1,7 +1,7 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const ActionStyle =
-  "text-[15px] font-medium tracking-normal text-primary/80 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)]";
+  "text-[15px] font-medium tracking-normal text-primary/80 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] hover:-translate-y-0.5 hover:tracking-wide hover:text-primary";
 
 function HeaderAction({ setIsOpen }) {
   return (
@@ -11,7 +11,7 @@ function HeaderAction({ setIsOpen }) {
           <li>
             <a
               href="#contact"
-              className="group flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-[15px] font-medium text-white shadow-[0_8px_20px_rgba(0,0,0,.08)] transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:translate-y-0"
+              className="group flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-[15px] font-medium text-white shadow-[0_8px_20px_rgba(0,0,0,.08)] transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] hover:-translate-y-1 hover:bg-secondary hover:shadow-[0_16px_35px_rgba(0,0,0,.16)] active:translate-y-0"
             >
               ارتباط
             </a>

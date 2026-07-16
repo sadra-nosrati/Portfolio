@@ -1,6 +1,7 @@
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./Pages/Home/Home";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -8,6 +9,21 @@ function App() {
       <Header />
       <Home />
       <Footer />
+
+      <ToastContainer
+        position="top-right"
+        newestOnTop
+        autoClose={3500}
+        closeButton={false}
+        hideProgressBar={false}
+        draggable
+        draggablePercent={35}
+        pauseOnHover
+        theme="dark"
+        limit={3}
+        rtl
+        toastStyle={{ width: "100%" }}
+      />
     </>
   );
 }

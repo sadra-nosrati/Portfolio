@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <>
-      <header className="bg-white inset-x-0 top-4 z-50 px-4 tablet-portrait:px-6">
+      <header className="inset-x-0 top-4 z-50 px-4 tablet-portrait:px-6">
         <div className="mx-auto max-w-7xl">
           <div className="flex h-18 items-center justify-between">
             <HeaderAction setIsOpen={setIsOpen} />

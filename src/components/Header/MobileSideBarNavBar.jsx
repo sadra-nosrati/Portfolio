@@ -21,28 +21,28 @@ function MobileSideBarNavBar() {
         </li>
 
         <li>
-          <a href="/services" className={MobileSideBarActionStyle}>
+          <a href="#skills" className={MobileSideBarActionStyle}>
             <LuWrench className="text-2xl transition-colors duration-200 group-active:text-white" />
             <span className="group-active:text-white">تخصص ها</span>
           </a>
         </li>
 
         <li>
-          <a href="/projects" className={MobileSideBarActionStyle}>
+          <a href="#projects" className={MobileSideBarActionStyle}>
             <LuFolderOpen className="text-2xl transition-colors duration-200 group-active:text-white" />
             <span className="group-active:text-white">پروژه ها</span>
           </a>
         </li>
 
         <li>
-          <a href="/blog" className={MobileSideBarActionStyle}>
+          <a href="#blog" className={MobileSideBarActionStyle}>
             <LuFileText className="text-2xl transition-colors duration-200 group-active:text-white" />
             <span className="group-active:text-white">بلاگ</span>
           </a>
         </li>
 
         <li>
-          <a href="/contact" className={MobileSideBarActionStyle}>
+          <a href="#contact" className={MobileSideBarActionStyle}>
             <HiOutlineEnvelope className="text-2xl transition-colors duration-200 group-active:text-white" />
             <span className="group-active:text-white">ارتباط</span>
           </a>

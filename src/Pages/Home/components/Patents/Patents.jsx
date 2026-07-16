@@ -8,11 +8,13 @@ function Patents() {
       aria-labelledby="patents-title"
       className="mt-40 bg-[#F3F3F5]"
     >
-      <div className="mx-auto max-w-7xl px-4 py-20">
-        <PatentsHeader />
+      <div className="w-full px-4 py-20 tablet-portrait:px-6">
+        <div className="mx-auto max-w-7xl">
+          <PatentsHeader />
 
-        <div className="mt-14 grid gap-8 tablet-portrait:grid-cols-2 laptop:grid-cols-3">
-          <PatentsBoxs />
+          <div className="mt-14 grid gap-8 tablet-portrait:grid-cols-2 laptop:grid-cols-3">
+            <PatentsBoxs />
+          </div>
         </div>
       </div>
     </section>

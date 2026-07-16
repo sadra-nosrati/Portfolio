@@ -11,30 +11,36 @@ function Footer() {
   };
 
   return (
-    <footer className="border-t border-slate-200 bg-white px-4">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 py-8 tablet-landscape:flex-row">
-        <p className="text-center text-sm leading-7 text-slate-500 tablet-landscape:text-right">
-          © {new Date().getFullYear()} تمامی حقوق محفوظ است. طراحی و توسعه توسط{" "}
-          <a
-            href="https://sadranosrati.ir"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-primary transition-colors duration-300 hover:text-secondary"
-          >
-            Sadra
-          </a>
-        </p>
+    <footer className="border-t border-slate-200 bg-white">
+      <div className="w-full px-4 tablet-portrait:px-6">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 py-8 tablet-landscape:flex-row">
+          <p className="text-center text-sm leading-7 text-slate-500 tablet-landscape:text-right">
+            © {new Date().getFullYear()} تمامی حقوق محفوظ است. طراحی و توسعه
+            توسط{" "}
+            <a
+              href="https://sadranosrati.ir"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-primary transition-colors duration-300 hover:text-secondary"
+            >
+              Sadra
+            </a>
+          </p>
 
-        <nav aria-label="اشتراک‌گذاری صفحه" className="flex items-center gap-3">
-          <button
-            type="button"
-            onClick={copyLink}
-            aria-label="کپی لینک صفحه"
-            className="flex cursor-pointer h-11 w-11 items-center justify-center rounded-xl bg-slate-100 text-lg text-primary transition-all duration-300 hover:-translate-y-1 hover:bg-secondary hover:text-white"
+          <nav
+            aria-label="اشتراک‌گذاری صفحه"
+            className="flex items-center gap-3"
           >
-            <GoMention />
-          </button>
-        </nav>
+            <button
+              type="button"
+              onClick={copyLink}
+              aria-label="کپی لینک صفحه"
+              className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl bg-slate-100 text-lg text-primary transition-all duration-300 hover:-translate-y-1 hover:bg-secondary hover:text-white"
+            >
+              <GoMention />
+            </button>
+          </nav>
+        </div>
       </div>
     </footer>
   );
