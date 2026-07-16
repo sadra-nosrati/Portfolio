@@ -1,7 +1,7 @@
 function TimelineHeader() {
   return (
     <div className="mb-16 text-center">
-      <h2 className="text-xl font-bold text-primary tablet-landscape:text-2xl">
+      <h2 className=" font-bold text-primary tablet-portrait:text-2xl laptop:text-3xl mobile-small:text-xl">
         پروژه ‌های شاخص در گذر زمان
       </h2>
 

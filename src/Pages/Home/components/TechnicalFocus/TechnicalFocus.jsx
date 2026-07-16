@@ -14,7 +14,9 @@ function TechnicalFocus() {
             className="group relative mx-auto w-fit text-3xl font-bold text-white tablet-portrait:text-4xl"
           >
             حوزه‌های تخصصی
-            <span className="absolute -bottom-3 right-0 h-1 w-12 rounded-full bg-secondary transition-all duration-500 group-hover:w-full" />
+            <span className="absolute -bottom-3 left-1/2 h-1 w-20 -translate-x-1/2 overflow-hidden rounded-full bg-white/20">
+              <span className="block h-full w-1/2 rounded-full bg-secondary transition-all duration-500 group-hover:w-full" />
+            </span>
           </h2>
 
           <TechnicalBox />

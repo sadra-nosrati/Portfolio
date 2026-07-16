@@ -4,7 +4,10 @@ import { notify } from "../../utils/Toast";
 function Footer() {
   const copyLink = async () => {
     try {
-      await navigator.clipboard.writeText(window.location.href);
+      const url = window.location.origin + window.location.pathname;
+
+      await navigator.clipboard.writeText(url);
+
       notify.success("لینک صفحه کپی شد");
     } catch {
       notify.error("امکان کپی لینک وجود ندارد");
