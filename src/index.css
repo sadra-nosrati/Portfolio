@@ -55,19 +55,12 @@
   }
 }
 
-@keyframes timelineShow {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.toast-success-progress {
+  background: #16a34a !important;
+  background-image: none !important;
 }
 
-.animate-timeline {
-  animation: timelineShow 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  opacity: 0;
+.toast-error-progress {
+  background: #dc2626 !important;
+  background-image: none !important;
 }

@@ -19,10 +19,13 @@ function App() {
         draggable
         draggablePercent={35}
         pauseOnHover
-        theme="dark"
         limit={3}
         rtl
-        toastStyle={{ width: "100%" }}
+        theme="light"
+        toastStyle={{
+          width: "100%",
+          fontFamily: "YekanBakh-SemiBold",
+        }}
       />
     </>
   );

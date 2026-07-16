@@ -1,12 +1,13 @@
 import { GoMention } from "react-icons/go";
+import { notify } from "../../utils/Toast";
 
 function Footer() {
   const copyLink = async () => {
     try {
       await navigator.clipboard.writeText(window.location.href);
-      alert("لینک صفحه کپی شد.");
+      notify.success("لینک صفحه کپی شد");
     } catch {
-      alert("امکان کپی لینک وجود ندارد.");
+      notify.error("امکان کپی لینک وجود ندارد");
     }
   };
 
