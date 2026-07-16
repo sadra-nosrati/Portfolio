@@ -3,7 +3,7 @@ import TimelineHeader from "./TimelineHeader";
 
 function ProjectTimeline() {
   return (
-    <section className="mx-auto mt-32 w-full max-w-7xl px-5">
+    <section id="projects" className="mx-auto mt-32 w-full max-w-7xl px-5">
       <TimelineHeader />
 
       <div className="relative">

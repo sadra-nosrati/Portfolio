@@ -3,7 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const ActionStyle =
   "text-[15px] font-medium tracking-normal text-primary/80 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] hover:-translate-y-0.5 hover:tracking-wide hover:text-primary";
 
-function HeaderAction({ isOpen, setIsOpen }) {
+function HeaderAction({ setIsOpen }) {
   return (
     <>
       <nav className="hidden tablet-landscape:block">

@@ -16,7 +16,7 @@ function HeroSection() {
       <div className="absolute inset-0 bg-primary/80" />
       <div className="absolute inset-0 bg-linear-to-l from-primary/95 via-primary/75 to-primary/40" />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 mobile:px-6 tablet-portrait:px-8">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 laptop:px-0">
         <div className="max-w-xl text-right mobile-landscape:max-w-2xl tablet-landscape:max-w-3xl">
           <p className="mb-4 inline text-sm text-secondary bg-secondary/30 px-4 py-1 rounded-sm mobile:text-base tablet-portrait:text-lg">
             راهکارهای مهندسی برای صنایع پیشرفته

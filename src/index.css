@@ -51,6 +51,7 @@
 @layer base {
   html {
     font-family: "YekanBakh-SemiBold", sans-serif;
+    scroll-behavior: smooth;
   }
 }
 
